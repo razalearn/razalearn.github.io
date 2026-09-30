@@ -1,0 +1,92 @@
+/* Short Budgets — shared styles. Colours are the Peepdoku "meadow" theme from the app. */
+:root {
+  --bg: #F2F7EC;
+  --surface: #FFFFFF;
+  --surface-muted: #E4EFDA;
+  --text: #2F5233;
+  --text-muted: #5F7F62;
+  --accent: #3E8E5A;
+  --on-accent: #FFFFFF;
+  --line: #D5E4CB;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121A14;
+    --surface: #1E2A20;
+    --surface-muted: #18211A;
+    --text: #E6F2E5;
+    --text-muted: #A7BFA8;
+    --accent: #5FBF84;
+    --on-accent: #0C1A11;
+    --line: #2C3B2E;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--accent); text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+
+header.site {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+header.site .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; min-height: 60px;
+}
+header.site .brand { font-weight: 800; color: var(--text); text-decoration: none; }
+header.site nav { display: flex; gap: 18px; flex-wrap: wrap; font-size: 15px; }
+header.site nav a { color: var(--text-muted); text-decoration: none; font-weight: 700; }
+header.site nav a:hover, header.site nav a[aria-current="page"] { color: var(--accent); }
+
+main { padding: 40px 0 56px; }
+
+.hero { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; margin-bottom: 28px; }
+.hero img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+.hero h1 { margin: 0 0 4px; font-size: 32px; line-height: 1.2; font-weight: 800; }
+.hero p { margin: 0; color: var(--text-muted); }
+
+h1 { font-size: 30px; line-height: 1.25; font-weight: 800; margin: 0 0 6px; }
+h2 { font-size: 20px; line-height: 1.3; font-weight: 800; margin: 32px 0 6px; }
+p { margin: 0 0 14px; }
+.muted { color: var(--text-muted); }
+.small { font-size: 14px; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin: 18px 0;
+}
+.card h2:first-child { margin-top: 0; }
+
+.button {
+  display: inline-block;
+  background: var(--accent); color: var(--on-accent);
+  font-weight: 800; text-decoration: none;
+  padding: 10px 18px; border-radius: 999px;
+}
+.button:hover { filter: brightness(1.05); }
+
+ul.links { list-style: none; padding: 0; margin: 0; }
+ul.links li { padding: 10px 0; border-top: 1px solid var(--line); }
+ul.links li:first-child { border-top: 0; }
+
+footer.site {
+  border-top: 1px solid var(--line);
+  padding: 22px 0 32px;
+  font-size: 14px; color: var(--text-muted);
+}
+footer.site .wrap { display: flex; gap: 16px; flex-wrap: wrap; justify-content: space-between; }
