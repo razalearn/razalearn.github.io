@@ -5,8 +5,10 @@ The public website for Short Budgets games, served by GitHub Pages at https://ra
 | URL | Used by |
 |---|---|
 | `/app-ads.txt` | AdMob. Must stay at the site root, and this domain must be the developer website on the Play listing. |
-| `/peepdoku/privacy/` | Play Console privacy policy URL, AdMob consent message, and the in-app `AppInfo.PRIVACY_POLICY_URL`. |
-| `/peepdoku/` | Play listing website and support page. |
+| `/<app>/privacy/` | Play Console privacy policy URL, AdMob consent message, and the in-app `AppInfo.PRIVACY_POLICY_URL`, for `peepdoku`, `birdoku` and `arrowz`. |
+| `/<app>/` | Play listing website and support page. |
 
-The privacy text must match `PRIVACY_POLICY` in the app's `ui/InfoScreens.kt`. Change both together
-and update the date in both places.
+The privacy pages are generated from `PRIVACY_POLICY` in each app's `ui/InfoScreens.kt`, which is
+the source of truth. After changing an app's policy (and `AppInfo.POLICY_LAST_UPDATED`), run
+`python tools/gen_privacy.py` from this folder, with the app projects checked out next to
+`peepdoku/` as they are locally, then commit and push.
