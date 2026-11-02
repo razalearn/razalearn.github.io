@@ -4,14 +4,80 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page Not Found</title>
+  <meta name="description" content="This page could not be found on the Short Budgets website.">
+  <meta name="theme-color" content="#F7F8F6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E1411" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" href="/assets/favicon-32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js" defer></script>
 </head>
 <body>
-  <main class="wrap">
-    <h1>That page isn't here</h1>
-    <p><a href="/">Go to the home page</a> or read the <a href="/peepdoku/privacy/">Peepdoku privacy policy</a>.</p>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SB</span>Short Budgets</a>
+      <nav class="global-nav" aria-label="Main">
+        <a href="/#games">Games</a>
+        <a href="/#apps" class="nav-hide-sm">Productivity</a>
+        <a href="/#privacy" class="nav-hide-sm">Privacy</a>
+        <a href="/#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap notfound">
+      <p class="code">Error 404</p>
+      <h1>That page isn't here</h1>
+      <p>The link may be out of date, or the page may have moved. Try the home page, or go straight to one of our apps.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="/">Go to the home page</a>
+        <a class="btn btn-secondary" href="/#privacy">Privacy centre</a>
+      </div>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SB</span>Short Budgets</a>
+        <p>Small, focused Android apps: cozy logic puzzles, a planner for teachers and a Quran Hifz tracker. Every one works offline.</p>
+      </div>
+      <div>
+        <h2>Puzzle games</h2>
+        <ul>
+          <li><a href="/peepdoku/">Peepdoku</a></li>
+          <li><a href="/birdoku/">Birdoku</a></li>
+          <li><a href="/arrowz/">Arrowz</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Productivity</h2>
+        <ul>
+          <li><a href="/rollbook/">Rollbook</a></li>
+          <li><a href="/laraib/">Laraib</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Privacy</h2>
+        <ul>
+          <li><a href="/peepdoku/privacy/">Peepdoku privacy</a></li>
+          <li><a href="/birdoku/privacy/">Birdoku privacy</a></li>
+          <li><a href="/arrowz/privacy/">Arrowz privacy</a></li>
+          <li><a href="/rollbook/privacy/">Rollbook privacy</a></li>
+          <li><a href="/laraib/privacy/">Laraib privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="wrap">
+        <span>© 2026 Short Budgets. All rights reserved.</span>
+        <a href="mailto:razabihari425@gmail.com">razabihari425@gmail.com</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

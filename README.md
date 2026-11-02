@@ -15,3 +15,11 @@ The privacy pages are generated from `PRIVACY_POLICY` in each app's `ui/InfoScre
 the source of truth. After changing an app's policy (and `AppInfo.POLICY_LAST_UPDATED`), run
 `python tools/gen_privacy.py` from this folder, with the app projects checked out next to
 `peepdoku/` as they are locally, then commit and push.
+
+## Design
+
+All pages share `assets/site.css` (design tokens, light and dark themes, components) and the
+optional `assets/site.js` (table-of-contents highlighting). Each app page sets
+`<body data-app="<slug>">` to pick up that app's accent colour. The header, app sub-navigation
+and footer markup lives in `tools/gen_privacy.py` (`header()`, `subnav()`, `footer()`); the
+hand-written pages repeat the same markup, so change both together.

@@ -5,64 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rollbook: Teacher Planner</title>
   <meta name="description" content="Rollbook is a teacher planner for Android: class timetable, attendance register, lesson plans, marks and student progress reports. Works offline.">
+  <meta name="theme-color" content="#F7F8F6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E1411" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" href="/assets/favicon-32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js" defer></script>
 </head>
-<body>
-  <header class="site">
-    <div class="wrap">
-      <a class="brand" href="/">Short Budgets</a>
-      <nav>
-        <a href="/rollbook/" aria-current="page">Rollbook</a>
-        <a href="/rollbook/privacy/">Privacy</a>
-        <a href="#support">Support</a>
+<body data-app="rollbook">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SB</span>Short Budgets</a>
+      <nav class="global-nav" aria-label="Main">
+        <a href="/#games">Games</a>
+        <a href="/#apps" class="nav-hide-sm">Productivity</a>
+        <a href="/#privacy" class="nav-hide-sm">Privacy</a>
+        <a href="/#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
+  <div class="subnav">
+    <div class="wrap">
+      <a class="subnav-app" href="/rollbook/"><img src="/assets/rollbook-192.png" alt="" width="26" height="26"><span>Rollbook</span></a>
+      <nav aria-label="Rollbook">
+        <a href="/rollbook/" aria-current="page">Overview</a>
+        <a href="/rollbook/#support">Support</a>
+        <a href="/rollbook/privacy/">Privacy policy</a>
+        <a href="/rollbook/delete-account/">Delete account</a>
+      </nav>
+    </div>
+  </div>
 
-  <main class="wrap">
-    <div class="hero">
-      <img src="/assets/rollbook-192.png" alt="Rollbook app icon" width="96" height="96">
-      <div>
-        <h1>Rollbook</h1>
-        <p>Teacher planner for Android</p>
+  <main id="main">
+    <section class="app-hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#apps">Productivity</a></li>
+            <li aria-current="page">Rollbook</li>
+          </ol>
+        </nav>
+        <div class="app-hero-grid">
+          <img class="app-hero-icon" src="/assets/rollbook-192.png" alt="Rollbook app icon" width="128" height="128">
+          <div>
+            <p class="eyebrow">Productivity · Education</p>
+            <h1>Rollbook</h1>
+            <p class="tagline">Teacher planner for Android</p>
+            <p class="lead">Rollbook is the teacher planner that puts your whole school day on your phone: your class timetable, attendance register, lesson plans and syllabus, exams and marks, and student progress reports. It works fully offline, so it is ready in any classroom, with or without a signal.</p>
+            <ul class="pills" aria-label="Highlights">
+          <li class="pill">Works fully offline</li>
+          <li class="pill">Classroom data stays on your phone</li>
+          <li class="pill">No ads or tracking</li>
+            </ul>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="#support"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Get support</a>
+              <a class="btn btn-secondary" href="/rollbook/privacy/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>Privacy policy</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <div class="wrap page-body">
+      <div class="stack">
+        <section class="card" aria-labelledby="features">
+          <div class="card-title"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span><h2 id="features">What it does</h2></div>
+          <div class="feature-grid">
+            <div class="feature"><h3>Timetable</h3><p>Your week on the home screen, today's periods first, with a reminder before each one.</p></div>
+            <div class="feature"><h3>Attendance register</h3><p>Everyone starts present; you mark the exceptions.</p></div>
+            <div class="feature"><h3>Lesson plans and syllabus</h3><p>Chapter by chapter, with periods taken against periods planned.</p></div>
+            <div class="feature"><h3>Exams and marks</h3><p>A mark sheet for every paper, with totals against the pass mark.</p></div>
+            <div class="feature"><h3>Progress reports</h3><p>A one-page PDF for any student, ready to share with parents.</p></div>
+            <div class="feature"><h3>Academic calendar</h3><p>Terms, holidays and working days, counted for you.</p></div>
+          </div>
+          <div class="callout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg><p>Your classes, students, registers and marks are stored on your phone, not on our servers.</p></div>
+        </section>
+
+        <section class="card" id="support" aria-labelledby="support-title">
+          <div class="card-title"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><h2 id="support-title">Support</h2></div>
+          <p>Found a problem, or have an idea for the app? Email <a href="mailto:razabihari425@gmail.com?subject=Rollbook%20support">razabihari425@gmail.com</a> and include your phone model and what you were doing. We read every message.</p>
+          <div class="btn-row"><a class="btn btn-primary" href="mailto:razabihari425@gmail.com?subject=Rollbook%20support">Email support</a></div>
+          <p class="fineprint">If your school gave you your login, ask your school first about classes, students or a forgotten password: it manages those.</p>
+        </section>
+      </div>
+
+      <aside aria-label="Rollbook resources">
+        <div class="card side-card">
+          <h2>Resources</h2>
+          <ul class="resource-list">
+            <li><a href="/rollbook/privacy/">Privacy policy</a></li>
+            <li><a href="/rollbook/delete-account/">Delete your account</a></li>
+            <li><a href="/">All Short Budgets apps</a></li>
+          </ul>
+        </div>
+      </aside>
     </div>
-
-    <p>Rollbook is the teacher planner that puts your whole school day on your phone: your class timetable, attendance register, lesson plans and syllabus, exams and marks, and student progress reports. It works fully offline, so it is ready in any classroom, with or without a signal.</p>
-
-    <div class="card">
-      <h2>What it does</h2>
-      <ul>
-        <li><strong>Timetable.</strong> Your week on the home screen, today's periods first, with a reminder before each one.</li>
-        <li><strong>Attendance register.</strong> Everyone starts present; you mark the exceptions.</li>
-        <li><strong>Lesson plans and syllabus.</strong> Chapter by chapter, with periods taken against periods planned.</li>
-        <li><strong>Exams and marks.</strong> A mark sheet for every paper, with totals against the pass mark.</li>
-        <li><strong>Progress reports.</strong> A one-page PDF for any student, ready to share with parents.</li>
-        <li><strong>Academic calendar.</strong> Terms, holidays and working days, counted for you.</li>
-      </ul>
-      <p class="muted small">Your classes, students, registers and marks are stored on your phone, not on our servers.</p>
-    </div>
-
-    <div class="card" id="support">
-      <h2>Support</h2>
-      <p>Found a problem, or have an idea for the app? Email <a href="mailto:razabihari425@gmail.com?subject=Rollbook%20support">razabihari425@gmail.com</a> and include your phone model and what you were doing. We read every message.</p>
-      <p class="muted small">If your school gave you your login, ask your school first about classes, students or a forgotten password: it manages those.</p>
-    </div>
-
-    <ul class="links card">
-      <li><a href="/rollbook/privacy/">Privacy policy</a></li>
-      <li><a href="/rollbook/delete-account/">Delete your account</a></li>
-    </ul>
   </main>
 
-  <footer class="site">
-    <div class="wrap">
-      <span>© 2026 Short Budgets</span>
-      <a href="/rollbook/privacy/">Privacy policy</a>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SB</span>Short Budgets</a>
+        <p>Small, focused Android apps: cozy logic puzzles, a planner for teachers and a Quran Hifz tracker. Every one works offline.</p>
+      </div>
+      <div>
+        <h2>Puzzle games</h2>
+        <ul>
+          <li><a href="/peepdoku/">Peepdoku</a></li>
+          <li><a href="/birdoku/">Birdoku</a></li>
+          <li><a href="/arrowz/">Arrowz</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Productivity</h2>
+        <ul>
+          <li><a href="/rollbook/">Rollbook</a></li>
+          <li><a href="/laraib/">Laraib</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Privacy</h2>
+        <ul>
+          <li><a href="/peepdoku/privacy/">Peepdoku privacy</a></li>
+          <li><a href="/birdoku/privacy/">Birdoku privacy</a></li>
+          <li><a href="/arrowz/privacy/">Arrowz privacy</a></li>
+          <li><a href="/rollbook/privacy/">Rollbook privacy</a></li>
+          <li><a href="/laraib/privacy/">Laraib privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="wrap">
+        <span>© 2026 Short Budgets. All rights reserved.</span>
+        <a href="mailto:razabihari425@gmail.com">razabihari425@gmail.com</a>
+      </div>
     </div>
   </footer>
 </body>

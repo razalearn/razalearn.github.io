@@ -5,81 +5,187 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rollbook Privacy Policy</title>
   <meta name="description" content="How Rollbook: Teacher Planner, an app by Short Budgets, handles your data.">
+  <meta name="theme-color" content="#F7F8F6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E1411" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" href="/assets/favicon-32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js" defer></script>
 </head>
-<body>
-  <header class="site">
-    <div class="wrap">
-      <a class="brand" href="/">Short Budgets</a>
-      <nav>
-        <a href="/rollbook/">Rollbook</a>
-        <a href="/rollbook/privacy/" aria-current="page">Privacy</a>
-        <a href="/rollbook/#support">Support</a>
+<body data-app="rollbook">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SB</span>Short Budgets</a>
+      <nav class="global-nav" aria-label="Main">
+        <a href="/#games">Games</a>
+        <a href="/#apps" class="nav-hide-sm">Productivity</a>
+        <a href="/#privacy" class="nav-hide-sm">Privacy</a>
+        <a href="/#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
+  <div class="subnav">
+    <div class="wrap">
+      <a class="subnav-app" href="/rollbook/"><img src="/assets/rollbook-192.png" alt="" width="26" height="26"><span>Rollbook</span></a>
+      <nav aria-label="Rollbook">
+        <a href="/rollbook/">Overview</a>
+        <a href="/rollbook/#support">Support</a>
+        <a href="/rollbook/privacy/" aria-current="page">Privacy policy</a>
+        <a href="/rollbook/delete-account/">Delete account</a>
+      </nav>
+    </div>
+  </div>
 
-  <main class="wrap">
+  <main id="main">
     <!-- Written by hand: tools/gen_privacy.py does not generate this page. -->
-    <h1>Rollbook privacy policy</h1>
-    <p class="muted small">Last updated 13 October 2026 · Developer: Short Budgets · App: Rollbook: Teacher Planner (com.shortbudgets.rollbook)</p>
+    <div class="page-head">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/rollbook/">Rollbook</a></li>
+            <li aria-current="page">Privacy policy</li>
+          </ol>
+        </nav>
+        <p class="eyebrow">Legal</p>
+        <h1>Rollbook privacy policy</h1>
+        <dl class="meta">
+        <div><dt>Last updated</dt><dd>13 October 2026</dd></div>
+        <div><dt>Developer</dt><dd>Short Budgets</dd></div>
+        <div><dt>App</dt><dd>Rollbook: Teacher Planner (com.shortbudgets.rollbook)</dd></div>
+        </dl>
+      </div>
+    </div>
 
-    <h2>The short version</h2>
-    <p>Rollbook is a planner for teachers. If you create your own account, we store who you are and which school you named, so that you can sign in again. Your classroom itself, meaning your classes, students, registers, marks, lesson plans and timetable, stays on your phone and is never sent to us. The app has no adverts, no analytics and no tracking.</p>
-
-    <h2>What we collect when you create an account</h2>
-    <p>When you tap Create account, the app sends the following to the Rollbook accounts service, and we keep it for as long as your account exists:</p>
-    <ul>
-      <li>your name and mobile number, which is what you sign in with;</li>
-      <li>your password, which is stored only as a one-way hash that cannot be read back;</li>
-      <li>the name of your school, and its town or city, state or region and country;</li>
-      <li>your main subject and your email address, if you choose to enter them;</li>
-      <li>the version of the app and the make and model of the phone you signed in on, and when you last signed in.</li>
-    </ul>
-    <p>We use this to sign you in, to let you sign in on a new phone, to answer you when you ask for help, and to understand which places and schools the app is being used in. We do not sell it, and we do not use it for advertising.</p>
-
-    <h2>Location</h2>
-    <p>The sign-up form has a button, Use my location to fill this in. Only if you tap it and allow the permission, the app reads your phone's approximate location once, uses Android's own address lookup to fill in your town, region and country, and sends the approximate coordinates with your sign-up so we know roughly where your school is. The app never reads your location at any other time and never in the background. You can leave the button alone and type your town instead.</p>
-
-    <h2>What stays on your phone</h2>
-    <p>For an account you created yourself, everything about your classroom is kept in a database on your phone: classes, subjects, students and their details, parent phone numbers, attendance registers, exam marks, lesson plans, your timetable, your calendar, your question bank and the progress reports you generate. None of it is uploaded to us and we cannot see it.</p>
-    <p>Backups are yours too. A backup is a file that the app saves where you tell it to: a folder on your phone, or wherever the system file picker reaches, such as your own Google Drive. If Android's own backup is switched on for your phone, Android may also include the app's database in the encrypted device backup held in your Google account; that is governed by Google's privacy policy and can be switched off in your phone's settings.</p>
-    <p>When you share a progress report, the app hands the PDF to the app you choose, for example WhatsApp or email. What happens to it after that is up to that app and the person you send it to.</p>
-
-    <h2>If your school gave you a login</h2>
-    <p>Some schools run Rollbook for their staff. If you sign in with a username your school issued, the app reads your classes, students and timetable from your school's own database and saves your registers, marks and other work back to it. Your school decides what is kept there and for how long, and is responsible for that data; this policy does not replace your school's. A copy is kept on your phone so that the app works without a connection. Ask your school if you want that data changed or deleted.</p>
-
-    <h2>Notifications</h2>
-    <p>If you allow notifications, the app reminds you before each period. These reminders are created on your phone from your own timetable. School accounts also show notices from the school.</p>
-
-    <h2>Who else handles the data</h2>
-    <p>The accounts service runs on Supabase, a database hosting provider, which stores the account details listed above on our behalf. Requests travel over an encrypted connection (HTTPS). Like any internet service, the servers see the IP address a request comes from; we use it only to limit repeated sign-in attempts and do not keep it with your account. We share your details with nobody else, unless the law requires us to.</p>
-
-    <h2>Students and children</h2>
-    <p>Rollbook is made for teachers and is not directed at children. Students do not use the app. Details about students are entered by their teacher and, for an account you created yourself, stay on the teacher's phone as described above.</p>
-
-    <h2>Deleting your account and your data</h2>
-    <p>You can delete your account at any time from inside the app: open More, tap your name at the top, then Delete account, and confirm with your password. That immediately and permanently removes your account, your sign-in sessions and the details listed above from our servers, and erases the app's data from your phone. If you can no longer use the app, see <a href="/rollbook/delete-account/">how to ask us to delete your account</a>.</p>
-    <p>Uninstalling the app, or clearing its data in your phone's settings, removes everything stored on the phone but does not close your account.</p>
-
-    <h2>Your choices</h2>
-    <p>You can change your name, school and other details from your profile in the app. You can ask us for a copy of the account details we hold, or to correct or delete them, by writing to the address below.</p>
-
-    <h2>Changes</h2>
-    <p>If this policy changes, the revised version will appear here and the date at the top will be updated.</p>
-
-    <h2>Contact</h2>
-    <p>Questions about this policy can be sent to <a href="mailto:razabihari425@gmail.com?subject=Rollbook%20privacy">razabihari425@gmail.com</a>.</p>
+    <div class="wrap doc-layout">
+      <aside class="toc">
+        <details open>
+          <summary>On this page</summary>
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#the-short-version">The short version</a></li>
+            <li><a href="#what-we-collect-when-you-create-an-account">What we collect when you create an account</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#what-stays-on-your-phone">What stays on your phone</a></li>
+            <li><a href="#if-your-school-gave-you-a-login">If your school gave you a login</a></li>
+            <li><a href="#notifications">Notifications</a></li>
+            <li><a href="#who-else-handles-the-data">Who else handles the data</a></li>
+            <li><a href="#students-and-children">Students and children</a></li>
+            <li><a href="#deleting-your-account-and-your-data">Deleting your account and your data</a></li>
+            <li><a href="#your-choices">Your choices</a></li>
+            <li><a href="#changes">Changes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ol>
+        </details>
+      </aside>
+      <article class="prose">
+      <section id="the-short-version" class="summary">
+        <h2>The short version<a class="anchor" href="#the-short-version" aria-label="Link to this section">#</a></h2>
+        <p>Rollbook is a planner for teachers. If you create your own account, we store who you are and which school you named, so that you can sign in again. Your classroom itself, meaning your classes, students, registers, marks, lesson plans and timetable, stays on your phone and is never sent to us. The app has no adverts, no analytics and no tracking.</p>
+      </section>
+      <section id="what-we-collect-when-you-create-an-account">
+        <h2>What we collect when you create an account<a class="anchor" href="#what-we-collect-when-you-create-an-account" aria-label="Link to this section">#</a></h2>
+        <p>When you tap Create account, the app sends the following to the Rollbook accounts service, and we keep it for as long as your account exists:</p>
+        <ul>
+        <li>your name and mobile number, which is what you sign in with;</li>
+        <li>your password, which is stored only as a one-way hash that cannot be read back;</li>
+        <li>the name of your school, and its town or city, state or region and country;</li>
+        <li>your main subject and your email address, if you choose to enter them;</li>
+        <li>the version of the app and the make and model of the phone you signed in on, and when you last signed in.</li>
+        </ul>
+        <p>We use this to sign you in, to let you sign in on a new phone, to answer you when you ask for help, and to understand which places and schools the app is being used in. We do not sell it, and we do not use it for advertising.</p>
+      </section>
+      <section id="location">
+        <h2>Location<a class="anchor" href="#location" aria-label="Link to this section">#</a></h2>
+        <p>The sign-up form has a button, Use my location to fill this in. Only if you tap it and allow the permission, the app reads your phone's approximate location once, uses Android's own address lookup to fill in your town, region and country, and sends the approximate coordinates with your sign-up so we know roughly where your school is. The app never reads your location at any other time and never in the background. You can leave the button alone and type your town instead.</p>
+      </section>
+      <section id="what-stays-on-your-phone">
+        <h2>What stays on your phone<a class="anchor" href="#what-stays-on-your-phone" aria-label="Link to this section">#</a></h2>
+        <p>For an account you created yourself, everything about your classroom is kept in a database on your phone: classes, subjects, students and their details, parent phone numbers, attendance registers, exam marks, lesson plans, your timetable, your calendar, your question bank and the progress reports you generate. None of it is uploaded to us and we cannot see it.</p>
+        <p>Backups are yours too. A backup is a file that the app saves where you tell it to: a folder on your phone, or wherever the system file picker reaches, such as your own Google Drive. If Android's own backup is switched on for your phone, Android may also include the app's database in the encrypted device backup held in your Google account; that is governed by Google's privacy policy and can be switched off in your phone's settings.</p>
+        <p>When you share a progress report, the app hands the PDF to the app you choose, for example WhatsApp or email. What happens to it after that is up to that app and the person you send it to.</p>
+      </section>
+      <section id="if-your-school-gave-you-a-login">
+        <h2>If your school gave you a login<a class="anchor" href="#if-your-school-gave-you-a-login" aria-label="Link to this section">#</a></h2>
+        <p>Some schools run Rollbook for their staff. If you sign in with a username your school issued, the app reads your classes, students and timetable from your school's own database and saves your registers, marks and other work back to it. Your school decides what is kept there and for how long, and is responsible for that data; this policy does not replace your school's. A copy is kept on your phone so that the app works without a connection. Ask your school if you want that data changed or deleted.</p>
+      </section>
+      <section id="notifications">
+        <h2>Notifications<a class="anchor" href="#notifications" aria-label="Link to this section">#</a></h2>
+        <p>If you allow notifications, the app reminds you before each period. These reminders are created on your phone from your own timetable. School accounts also show notices from the school.</p>
+      </section>
+      <section id="who-else-handles-the-data">
+        <h2>Who else handles the data<a class="anchor" href="#who-else-handles-the-data" aria-label="Link to this section">#</a></h2>
+        <p>The accounts service runs on Supabase, a database hosting provider, which stores the account details listed above on our behalf. Requests travel over an encrypted connection (HTTPS). Like any internet service, the servers see the IP address a request comes from; we use it only to limit repeated sign-in attempts and do not keep it with your account. We share your details with nobody else, unless the law requires us to.</p>
+      </section>
+      <section id="students-and-children">
+        <h2>Students and children<a class="anchor" href="#students-and-children" aria-label="Link to this section">#</a></h2>
+        <p>Rollbook is made for teachers and is not directed at children. Students do not use the app. Details about students are entered by their teacher and, for an account you created yourself, stay on the teacher's phone as described above.</p>
+      </section>
+      <section id="deleting-your-account-and-your-data">
+        <h2>Deleting your account and your data<a class="anchor" href="#deleting-your-account-and-your-data" aria-label="Link to this section">#</a></h2>
+        <p>You can delete your account at any time from inside the app: open More, tap your name at the top, then Delete account, and confirm with your password. That immediately and permanently removes your account, your sign-in sessions and the details listed above from our servers, and erases the app's data from your phone. If you can no longer use the app, see <a href="/rollbook/delete-account/">how to ask us to delete your account</a>.</p>
+        <p>Uninstalling the app, or clearing its data in your phone's settings, removes everything stored on the phone but does not close your account.</p>
+      </section>
+      <section id="your-choices">
+        <h2>Your choices<a class="anchor" href="#your-choices" aria-label="Link to this section">#</a></h2>
+        <p>You can change your name, school and other details from your profile in the app. You can ask us for a copy of the account details we hold, or to correct or delete them, by writing to the address below.</p>
+      </section>
+      <section id="changes">
+        <h2>Changes<a class="anchor" href="#changes" aria-label="Link to this section">#</a></h2>
+        <p>If this policy changes, the revised version will appear here and the date at the top will be updated.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact<a class="anchor" href="#contact" aria-label="Link to this section">#</a></h2>
+        <p>Questions about this policy can be sent to <a href="mailto:razabihari425@gmail.com?subject=Rollbook%20privacy">razabihari425@gmail.com</a>.</p>
+      </section>
+        <div class="doc-foot">
+          <span>Want to close your account? See <a href="/rollbook/delete-account/">how to delete your Rollbook account</a>.</span>
+          <a href="/rollbook/" class="arrow-link">Back to Rollbook</a>
+        </div>
+      </article>
+    </div>
   </main>
 
-  <footer class="site">
-    <div class="wrap">
-      <span>© 2026 Short Budgets</span>
-      <a href="/rollbook/">Back to Rollbook</a>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SB</span>Short Budgets</a>
+        <p>Small, focused Android apps: cozy logic puzzles, a planner for teachers and a Quran Hifz tracker. Every one works offline.</p>
+      </div>
+      <div>
+        <h2>Puzzle games</h2>
+        <ul>
+          <li><a href="/peepdoku/">Peepdoku</a></li>
+          <li><a href="/birdoku/">Birdoku</a></li>
+          <li><a href="/arrowz/">Arrowz</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Productivity</h2>
+        <ul>
+          <li><a href="/rollbook/">Rollbook</a></li>
+          <li><a href="/laraib/">Laraib</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Privacy</h2>
+        <ul>
+          <li><a href="/peepdoku/privacy/">Peepdoku privacy</a></li>
+          <li><a href="/birdoku/privacy/">Birdoku privacy</a></li>
+          <li><a href="/arrowz/privacy/">Arrowz privacy</a></li>
+          <li><a href="/rollbook/privacy/">Rollbook privacy</a></li>
+          <li><a href="/laraib/privacy/">Laraib privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="wrap">
+        <span>© 2026 Short Budgets. All rights reserved.</span>
+        <a href="mailto:razabihari425@gmail.com">razabihari425@gmail.com</a>
+      </div>
     </div>
   </footer>
 </body>
