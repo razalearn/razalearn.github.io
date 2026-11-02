@@ -5,55 +5,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Peepdoku Chick Logic Puzzle</title>
   <meta name="description" content="Place one cute chick in every colour. Cozy logic puzzles to play offline, by Short Budgets.">
+  <meta name="theme-color" content="#F7F8F6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E1411" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" href="/assets/favicon-32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js" defer></script>
 </head>
-<body>
-  <header class="site">
-    <div class="wrap">
-      <a class="brand" href="/">Short Budgets</a>
-      <nav>
-        <a href="/peepdoku/" aria-current="page">Peepdoku</a>
-        <a href="/peepdoku/privacy/">Privacy</a>
-        <a href="#support">Support</a>
+<body data-app="peepdoku">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SB</span>Short Budgets</a>
+      <nav class="global-nav" aria-label="Main">
+        <a href="/#games">Games</a>
+        <a href="/#apps" class="nav-hide-sm">Productivity</a>
+        <a href="/#privacy" class="nav-hide-sm">Privacy</a>
+        <a href="/#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
+  <div class="subnav">
+    <div class="wrap">
+      <a class="subnav-app" href="/peepdoku/"><img src="/assets/peepdoku-192.png" alt="" width="26" height="26"><span>Peepdoku</span></a>
+      <nav aria-label="Peepdoku">
+        <a href="/peepdoku/" aria-current="page">Overview</a>
+        <a href="/peepdoku/#support">Support</a>
+        <a href="/peepdoku/privacy/">Privacy policy</a>
+      </nav>
+    </div>
+  </div>
 
-  <main class="wrap">
-    <div class="hero">
-      <img src="/assets/peepdoku-192.png" alt="Peepdoku app icon" width="96" height="96">
-      <div>
-        <h1>Peepdoku</h1>
-        <p>Chick logic puzzle for Android</p>
+  <main id="main">
+    <section class="app-hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#games">Puzzle games</a></li>
+            <li aria-current="page">Peepdoku</li>
+          </ol>
+        </nav>
+        <div class="app-hero-grid">
+          <img class="app-hero-icon" src="/assets/peepdoku-192.png" alt="Peepdoku app icon" width="128" height="128">
+          <div>
+            <p class="eyebrow">Puzzle game</p>
+            <h1>Peepdoku</h1>
+            <p class="tagline">Chick logic puzzle for Android</p>
+            <p class="lead">Place one cute chick in every colour. Every chick has exactly one right place on the board, and pure deduction will lead you there: no guessing, no luck, just calm and satisfying logic puzzles. Every level is built on your phone, so the whole game plays offline.</p>
+            <ul class="pills" aria-label="Highlights">
+          <li class="pill">Plays offline</li>
+          <li class="pill">No guessing</li>
+          <li class="pill">One answer per board</li>
+            </ul>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="#support"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Get support</a>
+              <a class="btn btn-secondary" href="/peepdoku/privacy/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>Privacy policy</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <div class="wrap page-body">
+      <div class="stack">
+        <section class="card" aria-labelledby="how-to-play">
+          <div class="card-title"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><h2 id="how-to-play">How to play</h2></div>
+          <p class="muted">Each board is split into coloured regions.</p>
+          <ol class="rules">
+            <li><span>Place exactly one chick in every row, every column and every colour.</span></li>
+            <li><span>No two chicks may touch, not even diagonally.</span></li>
+          </ol>
+          <div class="callout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3Z"/></svg><p><strong>Stuck?</strong> A hint places a chick for you, or explains the next logical step.</p></div>
+        </section>
+
+        <section class="card" id="support" aria-labelledby="support-title">
+          <div class="card-title"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><h2 id="support-title">Support</h2></div>
+          <p>Found a bug, lost your progress, or have an idea for the game? Email <a href="mailto:razabihari425@gmail.com?subject=Peepdoku%20support">razabihari425@gmail.com</a> and include your phone model and the level you were on. We read every message.</p>
+          <div class="btn-row"><a class="btn btn-primary" href="mailto:razabihari425@gmail.com?subject=Peepdoku%20support">Email support</a></div>
+          <p class="fineprint">Purchases are handled by Google Play. For a refund, use Google Play's <a href="https://support.google.com/googleplay/answer/2479637">refund request page</a>.</p>
+        </section>
+      </div>
+
+      <aside aria-label="Peepdoku resources">
+        <div class="card side-card">
+          <h2>Resources</h2>
+          <ul class="resource-list">
+            <li><a href="/peepdoku/privacy/">Privacy policy</a></li>
+            <li><a href="/">All Short Budgets apps</a></li>
+          </ul>
+        </div>
+      </aside>
     </div>
-
-    <p>Place one cute chick in every colour. Every chick has exactly one right place on the board, and pure deduction will lead you there: no guessing, no luck, just calm and satisfying logic puzzles. Every level is built on your phone, so the whole game plays offline.</p>
-
-    <div class="card">
-      <h2>How to play</h2>
-      <p>Each board is split into coloured regions. Place exactly one chick in every row, every column and every colour, and no two chicks may touch, not even diagonally. Stuck? A hint places a chick for you, or explains the next logical step.</p>
-    </div>
-
-    <div class="card" id="support">
-      <h2>Support</h2>
-      <p>Found a bug, lost your progress, or have an idea for the game? Email <a href="mailto:razabihari425@gmail.com?subject=Peepdoku%20support">razabihari425@gmail.com</a> and include your phone model and the level you were on. We read every message.</p>
-      <p class="muted small">Purchases are handled by Google Play. For a refund, use Google Play's <a href="https://support.google.com/googleplay/answer/2479637">refund request page</a>.</p>
-    </div>
-
-    <ul class="links card">
-      <li><a href="/peepdoku/privacy/">Privacy policy</a></li>
-    </ul>
   </main>
 
-  <footer class="site">
-    <div class="wrap">
-      <span>© 2026 Short Budgets</span>
-      <a href="/peepdoku/privacy/">Privacy policy</a>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SB</span>Short Budgets</a>
+        <p>Small, focused Android apps: cozy logic puzzles, a planner for teachers and a Quran Hifz tracker. Every one works offline.</p>
+      </div>
+      <div>
+        <h2>Puzzle games</h2>
+        <ul>
+          <li><a href="/peepdoku/">Peepdoku</a></li>
+          <li><a href="/birdoku/">Birdoku</a></li>
+          <li><a href="/arrowz/">Arrowz</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Productivity</h2>
+        <ul>
+          <li><a href="/rollbook/">Rollbook</a></li>
+          <li><a href="/laraib/">Laraib</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Privacy</h2>
+        <ul>
+          <li><a href="/peepdoku/privacy/">Peepdoku privacy</a></li>
+          <li><a href="/birdoku/privacy/">Birdoku privacy</a></li>
+          <li><a href="/arrowz/privacy/">Arrowz privacy</a></li>
+          <li><a href="/rollbook/privacy/">Rollbook privacy</a></li>
+          <li><a href="/laraib/privacy/">Laraib privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="wrap">
+        <span>© 2026 Short Budgets. All rights reserved.</span>
+        <a href="mailto:razabihari425@gmail.com">razabihari425@gmail.com</a>
+      </div>
     </div>
   </footer>
 </body>

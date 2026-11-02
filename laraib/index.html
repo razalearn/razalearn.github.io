@@ -5,63 +5,143 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Laraib: Hifz Tracker &amp; Madrasa Manager</title>
   <meta name="description" content="Laraib is a Quran Hifz tracker and madrasa manager for Android: Sabaq, Sabqi and Manzil for every student, for teachers, parents and Islamic institutes.">
+  <meta name="theme-color" content="#F7F8F6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E1411" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" href="/assets/favicon-32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js" defer></script>
 </head>
-<body>
-  <header class="site">
-    <div class="wrap">
-      <a class="brand" href="/">Short Budgets</a>
-      <nav>
-        <a href="/laraib/" aria-current="page">Laraib</a>
-        <a href="/laraib/privacy/">Privacy</a>
-        <a href="#support">Support</a>
+<body data-app="laraib">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SB</span>Short Budgets</a>
+      <nav class="global-nav" aria-label="Main">
+        <a href="/#games">Games</a>
+        <a href="/#apps" class="nav-hide-sm">Productivity</a>
+        <a href="/#privacy" class="nav-hide-sm">Privacy</a>
+        <a href="/#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
+  <div class="subnav">
+    <div class="wrap">
+      <a class="subnav-app" href="/laraib/"><img src="/assets/laraib-192.png" alt="" width="26" height="26"><span>Laraib</span></a>
+      <nav aria-label="Laraib">
+        <a href="/laraib/" aria-current="page">Overview</a>
+        <a href="/laraib/#support">Support</a>
+        <a href="/laraib/privacy/">Privacy policy</a>
+        <a href="/laraib/delete-account/">Delete account</a>
+      </nav>
+    </div>
+  </div>
 
-  <main class="wrap">
-    <div class="hero">
-      <img src="/assets/laraib-192.png" alt="Laraib app icon" width="96" height="96">
-      <div>
-        <h1>Laraib</h1>
-        <p>Quran Hifz tracker and madrasa manager for Android</p>
+  <main id="main">
+    <section class="app-hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#apps">Productivity</a></li>
+            <li aria-current="page">Laraib</li>
+          </ol>
+        </nav>
+        <div class="app-hero-grid">
+          <img class="app-hero-icon" src="/assets/laraib-192.png" alt="Laraib app icon" width="128" height="128">
+          <div>
+            <p class="eyebrow">Education · Quran</p>
+            <h1>Laraib</h1>
+            <p class="tagline">Quran Hifz tracker and madrasa manager for Android</p>
+            <p class="lead">Laraib keeps every hifz student's Sabaq, Sabqi and Manzil in one place, so teachers, parents and the madrasa always know where each student stands in their Quran memorization. It works offline and syncs when a connection is back.</p>
+            <ul class="pills" aria-label="Highlights">
+          <li class="pill">Works offline, syncs later</li>
+          <li class="pill">For students, teachers, parents and madaris</li>
+          <li class="pill">No ads or tracking</li>
+            </ul>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="#support"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Get support</a>
+              <a class="btn btn-secondary" href="/laraib/privacy/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>Privacy policy</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <div class="wrap page-body">
+      <div class="stack">
+        <section class="card" aria-labelledby="features">
+          <div class="card-title"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span><h2 id="features">What it does</h2></div>
+          <div class="feature-grid">
+            <div class="feature"><h3>Hifz tracking</h3><p>Daily Sabaq, Sabqi and Manzil planned across the 604-page Madinah mushaf, with mistakes, weak pages, streaks, Daura and an estimate of when hifz will be complete.</p></div>
+            <div class="feature"><h3>Teachers</h3><p>A whole hifz class on one screen: who recited today, who is behind, and 30-day reports for each student.</p></div>
+            <div class="feature"><h3>Madaris and institutes</h3><p>Teachers join with an institution code; the institution sees every teacher's students and who needs attention.</p></div>
+            <div class="feature"><h3>Parents</h3><p>Follow a child's progress at home, once the child or teacher approves.</p></div>
+            <div class="feature"><h3>Quran and Tajweed</h3><p>The full Quran in the KFGQPC Hafs script, colour Tajweed, recitation, and 20 Tajweed lessons in English, Urdu and Hindi.</p></div>
+            <div class="feature"><h3>Learning to read</h3><p>Arabic letters, harakat and reading courses, writing practice, and a tasbeeh counter.</p></div>
+          </div>
+        </section>
+
+        <section class="card" id="support" aria-labelledby="support-title">
+          <div class="card-title"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><h2 id="support-title">Support</h2></div>
+          <p>Found a problem, or have an idea for the app? Email <a href="mailto:razakatihari@gmail.com?subject=Laraib%20support">razakatihari@gmail.com</a> and include your phone model and what you were doing. We read every message.</p>
+          <div class="btn-row"><a class="btn btn-primary" href="mailto:razakatihari@gmail.com?subject=Laraib%20support">Email support</a></div>
+          <p class="fineprint">If your madrasa or teacher manages your account, ask them first about joining a class or institution.</p>
+        </section>
+      </div>
+
+      <aside aria-label="Laraib resources">
+        <div class="card side-card">
+          <h2>Resources</h2>
+          <ul class="resource-list">
+            <li><a href="/laraib/privacy/">Privacy policy</a></li>
+            <li><a href="/laraib/delete-account/">Delete your account</a></li>
+            <li><a href="/">All Short Budgets apps</a></li>
+          </ul>
+        </div>
+      </aside>
     </div>
-
-    <p>Laraib keeps every hifz student's Sabaq, Sabqi and Manzil in one place, so teachers, parents and the madrasa always know where each student stands in their Quran memorization. It works offline and syncs when a connection is back.</p>
-
-    <div class="card">
-      <h2>What it does</h2>
-      <ul>
-        <li><strong>Hifz tracking.</strong> Daily Sabaq, Sabqi and Manzil planned across the 604-page Madinah mushaf, with mistakes, weak pages, streaks, Daura and an estimate of when hifz will be complete.</li>
-        <li><strong>Teachers.</strong> A whole hifz class on one screen: who recited today, who is behind, and 30-day reports for each student.</li>
-        <li><strong>Madaris and institutes.</strong> Teachers join with an institution code; the institution sees every teacher's students and who needs attention.</li>
-        <li><strong>Parents.</strong> Follow a child's progress at home, once the child or teacher approves.</li>
-        <li><strong>Quran and Tajweed.</strong> The full Quran in the KFGQPC Hafs script, colour Tajweed, recitation, and 20 Tajweed lessons in English, Urdu and Hindi.</li>
-        <li><strong>Learning to read.</strong> Arabic letters, harakat and reading courses, writing practice, and a tasbeeh counter.</li>
-      </ul>
-    </div>
-
-    <div class="card" id="support">
-      <h2>Support</h2>
-      <p>Found a problem, or have an idea for the app? Email <a href="mailto:razakatihari@gmail.com?subject=Laraib%20support">razakatihari@gmail.com</a> and include your phone model and what you were doing. We read every message.</p>
-      <p class="muted small">If your madrasa or teacher manages your account, ask them first about joining a class or institution.</p>
-    </div>
-
-    <ul class="links card">
-      <li><a href="/laraib/privacy/">Privacy policy</a></li>
-      <li><a href="/laraib/delete-account/">Delete your account</a></li>
-    </ul>
   </main>
 
-  <footer class="site">
-    <div class="wrap">
-      <span>© 2026 Short Budgets</span>
-      <a href="/">All apps</a>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SB</span>Short Budgets</a>
+        <p>Small, focused Android apps: cozy logic puzzles, a planner for teachers and a Quran Hifz tracker. Every one works offline.</p>
+      </div>
+      <div>
+        <h2>Puzzle games</h2>
+        <ul>
+          <li><a href="/peepdoku/">Peepdoku</a></li>
+          <li><a href="/birdoku/">Birdoku</a></li>
+          <li><a href="/arrowz/">Arrowz</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Productivity</h2>
+        <ul>
+          <li><a href="/rollbook/">Rollbook</a></li>
+          <li><a href="/laraib/">Laraib</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Privacy</h2>
+        <ul>
+          <li><a href="/peepdoku/privacy/">Peepdoku privacy</a></li>
+          <li><a href="/birdoku/privacy/">Birdoku privacy</a></li>
+          <li><a href="/arrowz/privacy/">Arrowz privacy</a></li>
+          <li><a href="/rollbook/privacy/">Rollbook privacy</a></li>
+          <li><a href="/laraib/privacy/">Laraib privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="wrap">
+        <span>© 2026 Short Budgets. All rights reserved.</span>
+        <a href="mailto:razabihari425@gmail.com">razabihari425@gmail.com</a>
+      </div>
     </div>
   </footer>
 </body>
