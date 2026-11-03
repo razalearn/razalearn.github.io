@@ -22,6 +22,7 @@ APPS = {
     "peepdoku": ("Peepdoku", "peepdoku/app/src/main/java/com/shortbudgets/logicriddle"),
     "birdoku": ("Birdoku", "birdoku/app/src/main/java/com/shortbudgets/logicriddle"),
     "arrowz": ("Arrowz", "arrowz/app/src/main/java/com/shortbudgets/arrowz"),
+    "pipewise": ("Pipewise", "pipewise/app/src/main/java/com/shortbudgets/pipewise"),
 }
 
 # Every app on the site: slug -> (name, has an account deletion page)
@@ -29,6 +30,7 @@ SITE_APPS = {
     "peepdoku": ("Peepdoku", False),
     "birdoku": ("Birdoku", False),
     "arrowz": ("Arrowz", False),
+    "pipewise": ("Pipewise", False),
     "rollbook": ("Rollbook", True),
     "laraib": ("Laraib", True),
 }
@@ -110,6 +112,7 @@ def footer():
           <li><a href="/peepdoku/">Peepdoku</a></li>
           <li><a href="/birdoku/">Birdoku</a></li>
           <li><a href="/arrowz/">Arrowz</a></li>
+          <li><a href="/pipewise/">Pipewise</a></li>
         </ul>
       </div>
       <div>
@@ -125,6 +128,7 @@ def footer():
           <li><a href="/peepdoku/privacy/">Peepdoku privacy</a></li>
           <li><a href="/birdoku/privacy/">Birdoku privacy</a></li>
           <li><a href="/arrowz/privacy/">Arrowz privacy</a></li>
+          <li><a href="/pipewise/privacy/">Pipewise privacy</a></li>
           <li><a href="/rollbook/privacy/">Rollbook privacy</a></li>
           <li><a href="/laraib/privacy/">Laraib privacy</a></li>
         </ul>
