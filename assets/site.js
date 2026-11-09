@@ -1,4 +1,4 @@
-/* Short Budgets: small progressive enhancements. The site works fully without this file. */
+/* Salmari Labs: small progressive enhancements. The site works fully without this file. */
 (function () {
   // Highlight the table-of-contents entry for the section being read.
   var links = document.querySelectorAll('.toc a[href^="#"]');

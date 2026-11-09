@@ -48,6 +48,7 @@ def head(title, description):
   <meta name="description" content="{description}">
   <meta name="theme-color" content="#F7F8F6" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0E1411" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="icon" type="image/png" href="/assets/favicon-32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,7 +67,7 @@ def header(current=None):
     return f"""  <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap bar">
-      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SB</span>Short Budgets</a>
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SL</span>Salmari Labs</a>
       <nav class="global-nav" aria-label="Main">
         {link("/#games", "Games", "games")}
         {link("/#apps", "Productivity", "apps", "nav-hide-sm")}
@@ -103,7 +104,7 @@ def footer():
     return """  <footer class="site-footer">
     <div class="wrap footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SB</span>Short Budgets</a>
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">SL</span>Salmari Labs</a>
         <p>Small, focused Android apps: cozy logic puzzles, a planner for teachers and a Quran Hifz tracker. Every one works offline.</p>
       </div>
       <div>
@@ -136,8 +137,8 @@ def footer():
     </div>
     <div class="footer-bottom">
       <div class="wrap">
-        <span>© 2026 Short Budgets. All rights reserved.</span>
-        <a href="mailto:razabihari425@gmail.com">razabihari425@gmail.com</a>
+        <span>© 2026 Salmari Labs. All rights reserved.</span>
+        <a href="mailto:salmarilabs@gmail.com">salmarilabs@gmail.com</a>
       </div>
     </div>
   </footer>
@@ -216,7 +217,7 @@ def render_generated(slug, name, updated, developer, sections):
     return doc_page(
         slug=slug,
         title=f"{name} Privacy Policy",
-        description=f"How {name}, a puzzle game by Short Budgets, handles your data.",
+        description=f"How {name}, a puzzle game by Salmari Labs, handles your data.",
         h1=f"{name} privacy policy",
         crumb="Privacy policy",
         current="privacy",

@@ -1,6 +1,6 @@
 # razalearn.github.io
 
-The public website for Short Budgets apps, served by GitHub Pages at https://razalearn.github.io.
+The public website for Salmari Labs apps, served by GitHub Pages at https://razalearn.github.io.
 
 | URL | Used by |
 |---|---|

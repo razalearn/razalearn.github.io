@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Short Budgets — design system
+   Salmari Labs — design system
    Tokens → base → layout → components → page patterns → utilities.
    Every app page sets <body data-app="…"> to pick up its own accent colour.
    ========================================================================== */
@@ -20,7 +20,7 @@
   --line: #E1E6DE;
   --line-strong: #C9D1C5;
 
-  /* Brand (Short Budgets meadow green) */
+  /* Brand (Salmari Labs meadow green) */
   --brand: #2F7D4F;
   --brand-strong: #236340;
   --on-brand: #FFFFFF;
